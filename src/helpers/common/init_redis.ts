@@ -2,7 +2,6 @@ import * as redis from 'redis'
 import { RedisConfig } from './environment'
 
 const REDIS_URL = `redis://${RedisConfig.REDIS_HOST}:${RedisConfig.REDIS_PORT}`
-console.log(RedisConfig.REDIS_HOST)
 
 const redisClient = redis.createClient({
     url: REDIS_URL,
