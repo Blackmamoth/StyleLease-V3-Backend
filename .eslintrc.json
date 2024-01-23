@@ -1,0 +1,117 @@
+{
+    "env": {
+        "browser": false,
+        "es6": true,
+        "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": "latest"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "no-useless-catch": "error",
+        "no-unused-vars": "error",
+        "no-undef": "error",
+        "no-shadow": "error",
+        "no-magic-numbers": [
+            "error",
+            {
+                "ignore": [
+                    0,
+                    1,
+                    500
+                ],
+                "enforceConst": true
+            }
+        ],
+        "no-param-reassign": "error",
+        "prefer-const": "error",
+        "arrow-body-style": [
+            "error",
+            "as-needed"
+        ],
+        "@typescript-eslint/no-var-requires": "off",
+        "no-return-await": "error",
+        "prefer-template": "error",
+        "no-useless-concat": "error",
+        "no-useless-escape": "error",
+        "no-useless-return": "error",
+        "no-extra-boolean-cast": "error",
+        "no-nested-ternary": "error",
+        "no-lonely-if": "error",
+        "@typescript-eslint/no-explicit-any": "off",
+        "no-multi-assign": "error",
+        "no-unneeded-ternary": "error",
+        "eqeqeq": "error",
+        "no-var": "error",
+        "object-shorthand": "error",
+        "prefer-arrow-callback": "error",
+        "prefer-rest-params": "error",
+        "prefer-spread": "error",
+        "prefer-destructuring": "error",
+        "no-restricted-syntax": [
+            "error",
+            "WithStatement"
+        ],
+        "no-eval": "error",
+        "no-implied-eval": "error",
+        "no-new-func": "error",
+        "no-octal": "error",
+        "no-restricted-properties": [
+            "error",
+            {
+                "property": "__defineGetter__",
+                "message": "Please use Object.defineProperty instead."
+            },
+            {
+                "property": "__defineSetter__",
+                "message": "Please use Object.defineProperty instead."
+            }
+        ],
+        "no-loop-func": "error",
+        "no-new-wrappers": "error",
+        "no-proto": "error",
+        "no-return-assign": "error",
+        "no-script-url": "error",
+        "no-self-assign": "error",
+        "no-sequences": "error",
+        "no-throw-literal": "error",
+        "no-unused-expressions": "error",
+        "no-use-before-define": "error",
+        "require-await": "error",
+        "yoda": "error",
+        "strict": [
+            "error",
+            "global"
+        ],
+        "radix": "error",
+        "no-implicit-coercion": "error",
+        "no-mixed-operators": "error",
+        "prefer-numeric-literals": "error",
+        "prefer-promise-reject-errors": "error",
+        "no-loss-of-precision": "error",
+        "no-promise-executor-return": "error",
+        "prefer-object-spread": "error",
+        "array-callback-return": "error",
+        "no-restricted-globals": [
+            "error",
+            "event"
+        ],
+        "space-before-function-paren": [
+            "error",
+            {
+                "anonymous": "always",
+                "named": "never",
+                "asyncArrow": "always"
+            }
+        ]
+    }
+}
